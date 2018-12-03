@@ -1,0 +1,146 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ma-Calc
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <ion-grid>
+        <ion-row>
+          <ion-col>
+            
+            <ion-item>
+                <ion-input type="text" [(ngModel)]="expVal" text-right></ion-input>
+            </ion-item>
+            
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <button ion-button color="light" full (click)="clrExp()">C</button>
+          </ion-col>
+
+          <ion-col>
+            <button ion-button color="light" full (click)="delExp()"><ion-icon name="arrow-round-back"></ion-icon></button>
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+            <ion-col>
+              <button ion-button color="light" full (click)="concatExp(1)">1</button>
+            </ion-col>
+            <ion-col>
+              <button ion-button color="light" full (click)="concatExp(2)">2</button>
+            </ion-col>
+  
+            <ion-col>
+              <button ion-button color="light" full  (click)="concatExp(3)">3</button>
+            </ion-col>
+            <ion-col>
+              <button ion-button color="light" full  (click)="carre()">X<sup>2</sup></button>
+            </ion-col>
+  
+            <ion-col>
+              <button ion-button color="light" full (click)="concatExp('/')">/</button>
+            </ion-col>
+          </ion-row>
+
+          <ion-row>
+            <ion-col>
+              <button ion-button color="light" full (click)="concatExp('4')">4</button>
+            </ion-col>
+            <ion-col>
+              <button ion-button color="light" full (click)="concatExp(5)">5</button>
+            </ion-col>
+  
+            <ion-col>
+              <button ion-button color="light" full (click)="concatExp(6)">6</button>
+            </ion-col>
+            <ion-col>
+              <button ion-button color="light" full (click)="concatExp('^')">X<sup>y</sup></button>
+            </ion-col>
+  
+            <ion-col>
+              <button ion-button color="light" full (click)="concatExp('x')">X</button>
+            </ion-col>
+          </ion-row>
+
+          <ion-row>
+            <ion-col>
+              <button ion-button color="light" full (click)="concatExp('7')">7</button>
+            </ion-col>
+            <ion-col>
+              <button ion-button color="light" full (click)="concatExp(8)">8</button>
+            </ion-col>
+  
+            <ion-col>
+              <button ion-button color="light" full (click)="concatExp(9)">9</button>
+            </ion-col>
+            <ion-col>
+              <button ion-button color="light" full  (click)="recineCarre()">&#x221A;</button>
+            </ion-col>
+  
+            <ion-col>
+              <button ion-button color="light" full (click)="concatExp('-')">-</button>
+            </ion-col>
+          </ion-row>
+
+          <ion-row>
+            <ion-col>
+              <button ion-button color="light" full (click)="concatExp('.')">,</button>
+            </ion-col>
+            <ion-col>
+              <button ion-button color="light" full (click)="concatExp(0)">0</button>
+            </ion-col>
+            <ion-col>
+                <button ion-button color="light" full (click)="concatExp('%')">%</button>
+            </ion-col>
+            <ion-col>
+              <button ion-button color="light" full (click)="calculer()">=</button>
+            </ion-col>
+  
+            <ion-col>
+              <button ion-button color="light" full (click)="concatExp('+')">+</button>
+            </ion-col>
+          </ion-row>
+
+          <ion-row>
+            <ion-col>
+              <button ion-button color="light" full (click)="toBin()">Bin</button>
+            </ion-col>
+            <ion-col>
+              <button ion-button color="light" full (click)="toDec()">Dec</button>
+            </ion-col>
+  
+            <ion-col>
+              <button ion-button color="light" full></button>
+            </ion-col>
+            <ion-col>
+              <button ion-button color="light" full></button>
+            </ion-col>
+  
+            
+          </ion-row>
+          <ion-row>
+            <ion-col>
+              <button ion-button color="light" full (click)="sohcah('sin')">Sin</button>
+            </ion-col>
+            <ion-col>
+              <button ion-button color="light" full (click)="sohcah('cos')">Cos</button>
+            </ion-col>
+  
+            <ion-col>
+              <button ion-button color="light" full (click)="sohcah('tan')">Tan</button>
+            </ion-col>
+            <ion-col>
+              <button ion-button color="light" full></button>
+            </ion-col>
+
+          </ion-row>
+
+
+      </ion-grid>
+</ion-content>
+
